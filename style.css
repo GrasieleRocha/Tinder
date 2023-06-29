@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Roboto;
+}
+
+.container {
+  width: 100%;
+}
+
+.banner {
+  /* background-image: url("./img/banner.jpeg"); */
+  background-size: cover;
+  width: 100%;
+  height: 31rem;
+  background-color: black;
+}
+
+.container-navbar {
+  width: 100%;
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-between;
+  margin-inline: auto;
+  align-items: center;
+  width: 90%;
+  display: flex;
+}
+
+.navbar i {
+  padding-right: 1rem;
+}
+
+.navbar img {
+  width: 6rem;
+}
+
+.container-hiden {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hiden li {
+  padding: 0 15px;
+  color: white;
+  display: flex;
+}
+
+.button-hiden {
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 0.3rem 2rem;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+}
+
+.container-banner-text {
+  width: 100%;
+  display: flex;
+  padding-top: 4rem;
+}
+
+.banner-text {
+  justify-content: center;
+  margin-inline: auto;
+  text-align: center;
+  width: 90%;
+  font-size: 1.4em;
+  color: white;
+  font-weight: 900;
+}
+
+.podcast {
+  padding: 3rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.button-account button {
+  border: none;
+  border-radius: 30px;
+  background-color: #fe3766;
+  padding: 0.6rem 1.6rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.button-open button {
+  border-radius: 30px;
+  padding: 0.5rem 4.3rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.information-photo {
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgb(99, 98, 98);
+  width: 90%;
+  justify-content: center;
+  margin-inline: auto;
+  font-weight: 900;
+}
+
+.container-testimony {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  gap: 9px;
+}
+
+.testimony1,
+.testimony2,
+.testimony3 {
+  border-radius: 10px;
+  border: 1px solid #d0d4dd;
+  width: 90%;
+  margin-inline: auto;
+  justify-content: center;
+  padding: 0.8rem 0.8rem 12rem 1.2rem;
+  box-shadow: 0 0 5px rgba(36, 35, 35, 0.2);
+}
+.hr-icon hr {
+  display: inline-block;
+  width: 78%;
+  border-top: 1px solid #d0d4dd;
+}
+.hr-icon i {
+  display: inline-block;
+  vertical-align: middle;
+  color: #d0d4dd;
+  font-size: 3rem;
+}
+
+.text-testimony {
+  width: 90%;
+}
+
+.container-footer {
+  width: 100%;
+  display: flex;
+}
+
+.footer {
+  justify-content: center;
+  margin-inline: auto;
+  width: 90%;
+}
+
+.container-legal-jobs {
+  display: flex;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+  gap: 1.3rem;
+  line-height: 20px;
+}
+
+.socials i {
+  font-size: 1.2rem;
+  padding-top: 4px;
+}
+
+.container-informations {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.informations {
+  width: 95%;
+}
+
+.aplication {
+  display: flex;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.aplication h2 {
+  font-size: 1.2rem;
+}
+
+.aplication img {
+  width: 5.5rem;
+}
+
+.container-informations p {
+  font-size: 0.8rem;
+  word-spacing: 1px;
+  padding-bottom: 2rem;
+}
+
+.questions-frequently {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 1rem;
+}
+
+.copy {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0 1rem 1rem 1rem;
+}
+/*---------------Medias Querys---------------- */
+@media screen and (min-width: 323px) {
+  .banner {
+    height: 35rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  .container-legal-jobs {
+    flex-wrap: wrap;
+  }
+  .legal-jobs,
+  .socials {
+    flex-basis: 100%;
+  }
+  .question {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 813px) {
+  .testimony2 {
+    display: none;
+  }
+
+  .testimony3 {
+    display: none;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  .container-hiden ul {
+    display: none;
+  }
+
+  .button-hiden {
+    display: none;
+  }
+
+  .fa-bars {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 814px) and (max-width: 819px) {
+  .container-hiden ul {
+    display: none;
+  }
+
+  .button-hiden {
+    display: block;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  h2 {
+    font-size: 80px;
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .container-testimony {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .container-hiden ul {
+    display: flex;
+  }
+
+  .button-hiden {
+    display: block;
+    position: relative;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .button-open {
+    display: none;
+  }
+
+  .container-legal-jobs {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .container-legal-jobs > div {
+    flex: 1;
+  }
+}
