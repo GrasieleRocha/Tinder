@@ -6,16 +6,22 @@
   font-family: Roboto;
 }
 
+:root {
+  --black: #000000;
+  --white: #faf6f6;
+  --red: rgb(223, 5, 5);
+  --buttonPink: rgb(254, 55, 102);
+}
+
 .container {
   width: 100%;
 }
 
 .banner {
-  /* background-image: url("./img/banner.jpeg"); */
+  background-image: url("./img/banner.jpg");
   background-size: cover;
   width: 100%;
   height: 31rem;
-  background-color: black;
 }
 
 .container-navbar {
@@ -48,16 +54,22 @@
 
 .hiden li {
   padding: 0 15px;
-  color: white;
+  color: var(--white);
   display: flex;
+  text-shadow: 1px 1px 1px #141414;
+}
+
+.hiden li:hover {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 .button-hiden {
   border: none;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 0.3rem 2rem;
-  color: black;
+  color: var(--black);
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 1.5rem;
@@ -78,8 +90,9 @@
   text-align: center;
   width: 90%;
   font-size: 1.4em;
-  color: white;
+  color: var(--white);
   font-weight: 900;
+  text-shadow: 1px 1px 1px #141414;
 }
 
 .podcast {
@@ -90,10 +103,15 @@
 
 .button-account button {
   border: none;
-  border-radius: 30px;
-  background-color: #fe3766;
-  padding: 0.6rem 1.6rem;
-  color: white;
+  border-radius: 18px;
+  background: var(--buttonPink);
+  background: linear-gradient(
+    4deg,
+    rgba(254, 55, 102, 1) 69%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  padding: 0.6rem 2.5rem;
+  color: var(--white);
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
@@ -102,30 +120,30 @@
 
 .button-open button {
   border-radius: 30px;
-  padding: 0.5rem 4.3rem;
-  color: white;
+  padding: 0.6rem 5rem;
+  color: var(--white);
   font-weight: 700;
   font-size: 1.3rem;
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid --white;
   cursor: pointer;
 }
 
 .information-photo {
-  justify-content: center;
-  text-align: center;
+  text-align: right;
   font-size: 0.7rem;
-  color: rgb(99, 98, 98);
-  width: 90%;
+  color: var(--white);
+  width: 98%;
   justify-content: center;
-  margin-inline: auto;
-  font-weight: 900;
+  margin-top: 2.5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #141414;
 }
 
 .container-testimony {
   width: 100%;
   display: flex;
-  padding: 1rem 0;
+  padding: 2rem 0;
   gap: 9px;
 }
 
@@ -140,11 +158,13 @@
   padding: 0.8rem 0.8rem 12rem 1.2rem;
   box-shadow: 0 0 5px rgba(36, 35, 35, 0.2);
 }
+
 .hr-icon hr {
   display: inline-block;
   width: 78%;
   border-top: 1px solid #d0d4dd;
 }
+
 .hr-icon i {
   display: inline-block;
   vertical-align: middle;
@@ -186,7 +206,7 @@
 }
 
 .informations {
-  width: 95%;
+  width: 100%;
 }
 
 .aplication {
@@ -220,7 +240,21 @@
   font-size: 0.7rem;
   padding: 0 1rem 1rem 1rem;
 }
+
 /*---------------Medias Querys---------------- */
+@media screen and (max-width: 386px) {
+  .information-photo {
+    display: none;
+  }
+  .aplication .googlestore {
+    display: none;
+  }
+
+  .questions {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 323px) {
   .banner {
     height: 35rem;
@@ -229,6 +263,7 @@
   h2 {
     font-size: 20px;
   }
+
   .container-legal-jobs {
     flex-wrap: wrap;
   }
@@ -238,6 +273,12 @@
   }
   .question {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .googlestore {
+    display: none;
   }
 }
 
@@ -259,6 +300,9 @@
   .button-hiden {
     display: none;
   }
+  .information-photo {
+    display: none;
+  }
 
   .fa-bars {
     display: inline-block;
@@ -273,6 +317,9 @@
   .button-hiden {
     display: block;
   }
+  .information-photo {
+    display: none;
+  }
 
   .fa-bars {
     display: none;
@@ -284,6 +331,14 @@
     font-size: 80px;
     word-spacing: 1rem;
     letter-spacing: 0.2rem;
+  }
+
+  .banner {
+    background-image: url("./img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
   }
 
   .container-testimony {
@@ -299,8 +354,14 @@
     position: relative;
   }
 
+  .button-hiden:hover {
+    background-color: #ffffffcb;
+    color: #000000;
+  }
+
   .fa-bars {
     display: none;
+    font-size: 0;
   }
 
   .button-open {
@@ -311,8 +372,24 @@
     display: flex;
     flex-wrap: nowrap;
   }
-  
+
   .container-legal-jobs > div {
     flex: 1;
+  }
+
+  .container-question-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .questions-frequently {
+    text-align: start;
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
+  .copy {
+    text-align: start;
+    font-size: 0.7rem;
+    padding: 0 1rem 1rem 1rem;
   }
 }
