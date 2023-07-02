@@ -5,11 +5,13 @@
 projeto com o intuito de aprender sobre responsividade, orientado por Imã Tech, parte do curso TodasTech.
 
 ## Layout Mobile
-![WhatsApp Image 2023-06-30 at 16 23 44](https://github.com/GrasieleRocha/Tinder/assets/104076058/94b5ef6a-cbdd-4465-89cc-c88ebbae93ce)
+![WhatsApp Image 2023-07-02 at 18 08 55](https://github.com/GrasieleRocha/Tinder/assets/104076058/1c322083-c720-41a3-9522-88c08139d5de)
+
 
 ## Layout Desktop
 
-![Design sem nome (16)](https://github.com/GrasieleRocha/Tinder/assets/104076058/dbbefc89-e11d-4be8-8b55-2a8cd58be0bc)
+![WhatsApp Image 2023-07-02 at 18 16 20](https://github.com/GrasieleRocha/Tinder/assets/104076058/46fa6bbd-699b-431d-bdc7-178650ba1957)
+
 
 ## Tecnologies used
 ### languages
