@@ -4,7 +4,7 @@
 
 projeto com o intuito de aprender sobre responsividade, orientado por Imã Tech, parte do curso TodasTech.
 
-## Layout Mobile
+## Layout Mobile.
 ![WhatsApp Image 2023-07-02 at 18 08 55](https://github.com/GrasieleRocha/Tinder/assets/104076058/1c322083-c720-41a3-9522-88c08139d5de)
 
 
