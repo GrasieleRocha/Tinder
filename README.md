@@ -19,7 +19,7 @@ projeto com o intuito de aprender sobre responsividade, orientado por Imã Tech,
 - `CSS`
 
 
-### Tools.
+### Tools
 - `VS Code`
 - `GitHub`
 - `Netlify`
